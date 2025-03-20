@@ -38,7 +38,7 @@ msgid "Auth Mode"
 msgstr "验证方式"
 
 msgid "Fix GRO"
-msgstr "修正GRO"
+msgstr "修正 GRO"
 
 msgid "NOT RUNNING"
 msgstr "未运行"
