@@ -1,0 +1,44 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Udp2raw Client"
+msgstr "Udp2raw 客户端"
+
+msgid "A simple Luci webui and shell for Udp2raw that can detect remote server ip change and restart Udp2raw."
+msgstr "一个简单的 Udp2raw 的 Luci webui 和 shell，可以检测远程服务器IP变化并重启 Udp2raw。"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "General Setting"
+msgstr "基本设置"
+
+msgid "Local Listen Host"
+msgstr "本地监听地址"
+
+msgid "Local Listen Port"
+msgstr "本地监听端口"
+
+msgid "Server Domain"
+msgstr "服务器域名"
+
+msgid "Server Port"
+msgstr "服务器端口"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Raw Mode"
+msgstr "Raw 方式"
+
+msgid "Cipher Mode"
+msgstr "加密方式"
+
+msgid "Auth Mode"
+msgstr "验证方式"
+
+msgid "NOT RUNNING"
+msgstr "未运行"
+
+msgid "RUNNING"
+msgstr "运行中"
