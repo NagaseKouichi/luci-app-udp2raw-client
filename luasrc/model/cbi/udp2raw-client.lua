@@ -66,4 +66,7 @@ o = s:option(ListValue, "auth_mode", translate("Auth Mode"))
 for _, v in ipairs(auth_modes) do o:value(v, v:lower()) end
 o.default = "md5"
 
+o         = s:option(Flag, "fix_gro", translate("Fix GRO"))
+o.rmempty = false
+
 return m

@@ -9,3 +9,4 @@ config udp2raw-client
   option raw_mode 'faketcp'
   option cipher_mode 'aes128cbc'
   option auth_mode 'md5'
+  option fix_gro '0'
