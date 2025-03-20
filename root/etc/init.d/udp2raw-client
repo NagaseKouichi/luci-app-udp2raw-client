@@ -10,8 +10,8 @@ start_instance() {
   local enable
   local listen_addr
   local listen_port
-  local remote_domain
-  local remote_port
+  local server_addr
+  local server_port
   local password
   local raw_mode
   local cipher_mode
@@ -23,7 +23,7 @@ start_instance() {
   config_get listen_addr "$1" listen_addr
   config_get listen_port "$1" listen_port
   config_get server_addr "$1" server_addr
-  config_get remote_port "$1" remote_port
+  config_get server_port "$1" server_port
   config_get key "$1" key
   config_get raw_mode "$1" raw_mode
   config_get cipher_mode "$1" cipher_mode

@@ -4,7 +4,7 @@
 ip=$(ping -c 1 "$3" | grep PING | awk -F'[()]' '{print $2}')
 
 # 启动 udp2raw
-/usr/bin/udp2raw -c -l $1:$2 -r $ip:$4 -k "$5" --raw-mode $6 --cipher-mode $7 --auth-mode $8 &
+/usr/bin/udp2raw -c -l $1:$2 -r $ip:$4 -k "$5" --raw-mode $6 --cipher-mode $7 --auth-mode $8 --fix-gro &
 
 while true; do
     # 获取当前的目标 IP 地址
@@ -21,7 +21,7 @@ while true; do
         sleep 2
 
         # 启动 udp2raw 连接新的 IP 地址
-        /usr/bin/udp2raw -c -l $1:$2 -r $new_ip:$4 -k "$5" --raw-mode $6 --cipher-mode $7 --auth-mode $8 &
+        /usr/bin/udp2raw -c -l $1:$2 -r $new_ip:$4 -k "$5" --raw-mode $6 --cipher-mode $7 --auth-mode $8 --fix-gro &
 
         # 更新当前 IP 地址
         ip="$new_ip"
